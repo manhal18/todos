@@ -1,0 +1,38 @@
+#app{
+    font-family: sans-serif;
+}
+
+.text-decoration-none:hover{
+    color: rgb(136, 164, 124);
+}
+
+.text-defualt{
+    color: rgb(136, 164, 124);
+}
+
+.bg-lightblack{
+    background-color: rgb(14, 15, 15);
+}
+
+.bg-petrol{
+    background-color: rgb(2, 59, 52)
+}
+
+.form-border{
+    border: 2px;
+    border-color: rgb(2, 59, 52);
+    /* border-radius: 1rem; */
+}
+
+.fs-md{
+    font-size: medium;
+}
+
+.fs-lg{
+    font-size: large;
+}
+
+
+
+/* @media only screen and (max-width: 1199px) and (min-width: 992px){
+} */
