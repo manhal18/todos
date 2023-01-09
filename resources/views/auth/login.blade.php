@@ -50,7 +50,7 @@
                             @endif
                         </div>
 
-                        <div class="row mb-4">
+                        <div class="row mb-4 px-3">
                             <div class="col-md-10 offset-md-1 bg-lightblack">
                                 <button type="submit" class="btn w-100">
                                     <label class="text-defualt"><b>{{ __('Login') }}</b></label>

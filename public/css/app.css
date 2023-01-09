@@ -15,13 +15,7 @@
 }
 
 .bg-petrol{
-    background-color: rgb(2, 59, 52)
-}
-
-.form-border{
-    border: 2px;
-    border-color: rgb(2, 59, 52);
-    /* border-radius: 1rem; */
+    background-color: rgb(2, 59, 52) !important
 }
 
 .fs-md{

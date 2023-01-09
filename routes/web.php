@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,14 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [App\Http\Controllers\TaskController::class, 'index']);
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::view('/layout/projects', 'projects.index');
-Route::view('/layout/projects/create', 'projects.create');
-Route::view('/layout/projects/show', 'projects.show');
+Route::get('/home', [App\Http\Controllers\TaskController::class, 'index'])->name('tasks');
