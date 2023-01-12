@@ -10,6 +10,10 @@
     color: rgb(136, 164, 124);
 }
 
+.text-petrol{
+    color: rgb(2, 50, 51) !important
+}
+
 .bg-lightblack{
     background-color: rgb(14, 15, 15);
 }
