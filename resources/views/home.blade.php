@@ -3,7 +3,7 @@
 @section('title','Todo Application')
 
 @section('content')
-<div class="container" style="padding-top:4rem; padding-bottom:15rem;">
+<div class="container my-4" style="padding-top:4rem; padding-bottom:18rem;">
     <div class="row justify-content-center">
         <div class="col-md-4 p-4">
             @livewire('add-task')

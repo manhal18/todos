@@ -8,11 +8,12 @@ class Task extends Component
 {
     public function render()
     {
-        $tasks = [
-            "id" => "1",
-            "title" => "title completed",
-            "completed" => 0
-        ];
-        return view('livewire.task',['tasks' => $tasks]);
+
+        $totalTasks = auth()->user()->tasks()->count();
+        $tasks = auth()->user()->tasks()->latest()->get();
+        return view('livewire.task', [
+            'totalTasks' => $totalTasks,
+            'tasks' => $tasks
+        ]);
     }
 }
