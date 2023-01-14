@@ -20,7 +20,3 @@ Route::get('/', [App\Http\Controllers\TaskController::class, 'index']);
 Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\TaskController::class, 'index'])->name('tasks');
-
-Route::get('/show', function(){
-    return view('projects.show');
-});
