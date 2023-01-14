@@ -9,7 +9,7 @@
     font-size: 20px;
 }
 
-input[type=checkbox] {
+label input[type=checkbox] {
     visibility: hidden;
 }
 

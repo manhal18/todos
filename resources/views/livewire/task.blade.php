@@ -17,16 +17,17 @@
                 <td class="col-6">{{ $task->title }}</td>
                 <td class="col-1">
                     <label class="main">
-                        <input type="checkbox" value="1" {{ $task->completed == true ? 'checked' : '' }}>
+                        <input type="checkbox" wire:click.prevent="editTask({{ $task->id }})"
+                        {{ $task->completed == true ? 'checked' : '' }}>
                         <span class="geekmark mt-1"></span>
                     </label>
                 </td>
                 <td class="col-4 pt-0">
-                    <span class="mx-2 btn">
+                    <span class="mx-2 btn" wire:click.prevent="destroy({{ $task->id }})">
                         <img src="/icons/trash.svg" alt="">
                     </span>
                     <span class="mx-2 btn">
-                        <img src="/icons/edit.svg" alt="">
+                        <img src="/icons/edit.svg" alt="" wire:click.prevent="editTaskTitle({{ $task->id }})">
                     </span>
                 </td>
             </tr>

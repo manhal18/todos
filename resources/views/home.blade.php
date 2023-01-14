@@ -7,6 +7,7 @@
     <div class="row justify-content-center">
         <div class="col-md-4 p-4">
             @livewire('add-task')
+            @livewire('update-task')
         </div>
 
         <div class="col-md-8 p-4">

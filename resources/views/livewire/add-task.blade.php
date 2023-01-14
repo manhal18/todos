@@ -3,7 +3,8 @@
 
 
     <div class="form-group">
-        <input type="text" wire:model="title" class="form-control my-4">
+        <input type="text" wire:model="title" class="form-control my-4" required>
+        @error('title') <span class="error text-danger">{{ $message }}</span> @enderror
     </div>
 
     <div class="form-group">

@@ -8,6 +8,10 @@ class AddTask extends Component
 {
     public $title;
 
+    protected $rules = [
+        'title' => 'required|min:5',
+    ];
+
     public function render()
     {
         return view('livewire.add-task');
@@ -15,6 +19,7 @@ class AddTask extends Component
 
     public function addTask()
     {
+        $this->validate();
 
         auth()->user()->tasks()->create([
             'title' => $this->title
@@ -22,6 +27,6 @@ class AddTask extends Component
 
         $this->title = "";
 
-        // $this->emit('taskAdded');
+        $this->emit('refreshTasks');
     }
 }
